@@ -5,8 +5,8 @@ import java.awt.geom.Point2D;
 
 public class Circle extends PhysicsObject {
 
-    private Point2D.Float center;
-    private float radius;
+    public Point2D.Float center;
+    public float radius;
 
     public Circle(float x, float y, float radius){
         center = new Point2D.Float(x, y);
