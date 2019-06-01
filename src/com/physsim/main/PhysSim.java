@@ -17,7 +17,7 @@ public class PhysSim extends Canvas implements Runnable{
     private Thread thread;
 
     public PhysSim(){
-        new Window(WIDTH, HEIGHT, "TANKS!", this);
+        new Window(WIDTH, HEIGHT, "PhysSim!", this);
         System.out.println("Application started");
     }
 
