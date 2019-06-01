@@ -15,12 +15,12 @@ public class PhysSim extends Canvas implements Runnable{
     private boolean running = false;
 
     private Thread thread;
+    private Handler handler;
 
     private PhysSim(){
         new Window(WIDTH, HEIGHT, "PhysSim!", this);
+        handler = new Handler();
         System.out.println("Application started");
-
-        //Test change
     }
 
     public synchronized void start(){
@@ -69,7 +69,7 @@ public class PhysSim extends Canvas implements Runnable{
     }
 
     private void tick(){
-
+        handler.tick();
     }
 
     private void render(){
@@ -80,7 +80,7 @@ public class PhysSim extends Canvas implements Runnable{
         }
         Graphics g = bs.getDrawGraphics();
         Graphics2D g2d = (Graphics2D) g;
-
+        handler.render(g);
         g.dispose();
         bs.show();
     }
