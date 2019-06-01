@@ -43,9 +43,10 @@ public class AABB extends PhysicsObject {
     public void tick() {
 
     }
-
+  
     public void render(Graphics g) {
         g.drawRect((int) min.x, (int) min.y, (int) (max.x - min.x), (int) (max.y - min.y));
+
     }
 
 }
