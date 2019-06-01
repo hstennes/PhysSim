@@ -8,12 +8,14 @@ public class Circle extends PhysicsObject {
     public Point2D.Float center;
     public float radius;
 
-    public Circle(float x, float y, float radius){
+    public Circle(float mass, float x, float y, float radius){
+        super(mass);
         center = new Point2D.Float(x, y);
         this.radius = radius;
     }
 
-    public Circle(Point2D.Float center, float radius){
+    public Circle(float mass, Point2D.Float center, float radius){
+        super(mass);
         this.center = center;
         this.radius = radius;
     }
