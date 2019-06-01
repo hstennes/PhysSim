@@ -23,6 +23,14 @@ public class Circle extends PhysicsObject {
 
     }
 
+    public Point2D.Float getCenter() {
+        return center;
+    }
+
+    public float getRadius() {
+        return radius;
+    }
+
     public void render(Graphics g){
         g.drawOval((int) (center.x - radius), (int) (center.y - radius), (int) (2 * radius), (int) (2 * radius));
     }
