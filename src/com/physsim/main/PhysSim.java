@@ -11,14 +11,16 @@ public class PhysSim extends Canvas implements Runnable{
 
     private static final long serialVersionUID = 1L;
     private static Dimension resolution = Toolkit.getDefaultToolkit().getScreenSize();
-    public static final int WIDTH = (int) resolution.getWidth(), HEIGHT = (int) resolution.getHeight() - 100;
+    private static final int WIDTH = (int) resolution.getWidth(), HEIGHT = (int) resolution.getHeight() - 100;
     private boolean running = false;
 
     private Thread thread;
 
-    public PhysSim(){
+    private PhysSim(){
         new Window(WIDTH, HEIGHT, "PhysSim!", this);
         System.out.println("Application started");
+
+        //Test change
     }
 
     public synchronized void start(){
