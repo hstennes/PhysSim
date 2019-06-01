@@ -1,5 +1,7 @@
 package com.physsim.main;
 
-public class PhysicsObject {
+public abstract class PhysicsObject {
+
+    public abstract void tick();
 
 }
